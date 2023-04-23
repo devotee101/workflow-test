@@ -36,8 +36,8 @@ jobs:
           workflow: build.yml
           name: test
           commit: ${{github.sha}}
+          path: ./out
 
       - name: View conents
         run: |
-          unzip test.zip -d ./out
           cat ./out/test.txt
