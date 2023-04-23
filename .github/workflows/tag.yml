@@ -39,4 +39,5 @@ jobs:
 
       - name: View conents
         run: |
-          cat /test.txt
+          unzip test.zip -d ./out
+          cat ./out/test.txt
